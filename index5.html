@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tretmani lica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon/favicon1.jpg" type="image/x-icon" />
+    <script src="js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <!-- Sleeping Beauty -> slika tj logo -->
+            <div class="logo"><a href="index.html"><img src="css/img/logo.jpg" alt="logo"></a></div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="index1.html">Usluge</a></li>
+                <li><a href="index2.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="lice-baner">
+            <h1>Tretmani lica</h1>
+        </div>
+
+        <div class="lice-content">
+            <!-- <div class="lice-slika">
+                <img class="slika1" src="img/tretmanlica.jpg" alt="tretman">
+                <img class="slika2" src="img/tretman.jpg" alt="tretman">
+            </div> -->
+
+            <div class="lice-tekst">
+                <img class="slika1" src="css/img/tretmanlica.jpg" alt="tretman">
+                <p>Salon Sleeping Beauty u ponudi ima širok spektar različitih tretmana
+                    lica shodno Vašem tipu i stanju kože, kao i mogućnost kupovine proizvoda za kućnu
+                    negu uz stručnog saveta našeg tima.</p>
+                <br>
+
+                <h3>PURE tretman</h3><br>
+                <p>Pure tretman je higijenski tretman, koji čisti kožu i regulise nivo lipida. <br>
+                    Nakon ekstrakcije, nekoliko pokreta masaže opustiće kožu, dok hladna maska dodatno odmoriti
+                    kožu i smiriti znakove iritacije.</p>
+                <br>
+
+                <h3>CRASH tretman– aktivna potpuna hidratacija</h3><br>
+                <p> Ispunite želju kože svojih klijenata utolivši joj zeđ hidrantnim ampulama.
+                    Fantastična količina vlage koja u jednom tretmanu ulazi u kožu ostavlja
+                    na njoj veo blistavosti i čini je čvrstom i zdravom.</p>
+                <br>
+                <img class="slika2" src="css/img/tretman.jpg" alt="tretman">
+                <h3>Kompleks C– vitaminski koktel za umornu kožu</h3><br>
+                <p>Vitaminski koktel vitamina C, A i E daje koži vitalnost istovremeno je opustajući.
+                    Ojačava mehanizme odbrane kože i daje joj novu energiju, čineći je blistavom i čvrstom.
+                    Vitamin C je neophodan za pravilno funkcionisanje u oragnizmu.</p>
+                <br>
+
+                <h3>OXYGEN tretman– snaga kiseonika na Vašoj koži</h3><br>
+                <p>Osvežite kožu klijenta, ali mu istovremeno dočarajte i atmosferu planinskih vrhova i glečera.
+                    Glatko obrađen gorski kristal, poludragi kamen specifične energije, u kombinaciji sa fluidom
+                    podmlađuje kožu i opušta besprekornim pokrerima masaže.</p>
+                <br>
+
+                <h3>COLAGEN BOOSTER tretman- ojačava kolagensku mrežu novim vlaknima</h3><br>
+                <p>Anti age u pravom smislu te reci.
+                    U toku ovog tretmana podstiće se sinteza kolagena u koži tako da koža postaje cvršća,
+                    bore pliće, a konture izraženije.</p>
+                <br>
+
+                <h3>EKSKLUZIVNI tretman</h3>
+                <h3>REVERSIVE ULTIMATE ANTI AGE tretman</h3><br>
+                <p>Nova dimenzija sveže kože počinje ovim tretmanom.
+                    Pažljivo balansirala piling maska na bazi voxnih kiselina,
+                    inovativni dvofazni aktivni serum i posebna masažna krema učiniće
+                    lice podmlađenim i blistavim.</p>
+                <br>
+            </div>
+            <br><br><br><br>
+            <hr><br><br>
+            <p id="promo-tekst">Do 14. februara možete zakazati Vaš termin po promo cenama! Vreme do kraja promo perioda
+                polako ističe, zato požurite i rezervišite svoj
+                tretman <a href="index2.html">ovde</a>.</p><br><br>
+            <p id="demo"></p>
+            <script>
+                // brojac
+                // Set the date we're counting down to
+                var countDownDate = new Date("Feb 14, 2020 23:59:59").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function () {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Display the result in the element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+
+                    // If the count down is finished, write some text
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);</script>
+        </div>
+        <div class="footer">
+            <div>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="index1.html">Usluge</a>
+                        <ul>
+                            <li><a href="index3.html">  Šminkanje</a></li>
+                            <li><a href="index4.html">  Pedikir i manikir</a></li>
+                            <li><a class="active" href="index5.html">  Tretmani lica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index2.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>Adresa: <br><br>
+                Vojvode Stepe 333
+                Beograd</div>
+            <div>
+                Kontakt telefon: <br><br> +381/61-5040-256
+            </div>
+            <div> Email: <br><br> sleepingbeauty@gmail.com</div>
+            <div class="trademark-sekcija">
+                <span id="date"></span><span> Sleeping Beauty TM </span>
+
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var d = new Date();
+                    $("#date")[0].innerHTML = d.toLocaleDateString() + " &nbsp";
+                })</script>
+        </div>
+    </div>
+</body>
+
+</html>

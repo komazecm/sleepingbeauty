@@ -1,0 +1,144 @@
+<!-- kontakt -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon/favicon1.jpg" type="image/x-icon" />
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#forma').submit(function (e) {
+                e.preventDefault();
+                var imePrezime = $('#imePrezime').val();
+                var email = $('#email').val();
+                var naslov = $('#naslov').val();
+                var poruka = $('#poruka').val();
+
+                $(".error").remove();
+
+                if (imePrezime.length < 1) {
+                    $('#imePrezime').after('<span class="error">Ovo je obavezno polje!</span>');
+                } else if (email.length < 1) {
+                    $('#email').after('<span class="error">Ovo je obavezno polje!</span>');
+                } else if (naslov.length < 1) {
+                    $('#naslov').after('<span class="error">Ovo je obavezno polje!</span>');
+                } else if (poruka.length < 1) {
+                    $('#poruka').after('<span class="error">Ovo je obavezno polje!</span>');
+                } else {
+                    alert("Uspešno ste poslali upit na našu email adresu! Odgovorićemo Vam u najkraćem mogućem roku.")
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <!-- Sleeping Beauty -> slika tj logo -->
+            <div class="logo"><a href="index.html"><img src="css/img/logo.jpg" alt="logo"></a></div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="index1.html">Usluge</a></li>
+                <li><a href="index2.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="baner">
+            <h1>Kontaktirajte nas</h1>
+        </div>
+
+        <div class="kontakt-content">
+            <div class="info">
+                <b>Adresa:</b><br> <br>
+                <ul>
+                    <li>Vojvode Stepe 333</li>
+                    <li>Beograd</li>
+                </ul><br>
+                <hr><br>
+                <b>Kontakt telefon:</b> <br>
+                <br>+381/61-5040-256 <br><br>
+                <hr><br>
+                <b>Email:</b> <br> <br>
+                sleepingbeauty@gmail.com
+                <br> <br>
+                <hr> <br>
+                <b>Radno vreme:</b> <br><br>
+                Pon - Pet <br><br> 9:00 - 21:00 <br> <br>
+                Sub <br><br> 9:00 - 16:00 <br>
+            </div>
+            <br>
+            <div class="slanjeUpita">
+                <h2>Kontakt forma</h2>
+                <div class="podDiv">
+                    <form action="forma" id="forma">
+                        <br>
+                        <p>Ime i prezime: </p>
+                        <input type="text" id="imePrezime">
+                        <br>
+                        <p>E-mail: </p>
+                        <input type="text" id="email">
+                        <br>
+                        <p>Naslov poruke: </p>
+                        <input type="text" id="naslov">
+                        <br>
+                        <p>Sadržaj poruke: </p>
+                        <input type="text" id="poruka">
+                        <br><br>
+                        <input type="submit" value="Pošalji" onclick="posaljiFormu()">
+                        <input type="reset" id="resetuj" value="Resetuj" onclick="myFunction2()">
+                        <br><br>
+                        <input type="checkbox" id="prijavaNaNewsletter" onclick="myFunction1()">
+                        <p> Želim da mi stižu obaveštenja o aktuelnim ponudama i promocijama<br></p>
+
+                        <p id="text" style="display:none"> <br> Hvala Vam što pokazujete interesovanje za ponudu salona
+                            Sleeping Beauty! Poruke će Vam stizati
+                            na gore ostavljen email.<br></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="index1.html">Usluge</a>
+                        <ul>
+                            <li><a href="index3.html"> Šminkanje</a></li>
+                            <li><a href="index4.html"> Pedikir i manikir</a></li>
+                            <li><a href="index5.html"> Tretmani lica</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="active" href="index2.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>Adresa: <br><br>
+                Vojvode Stepe 333
+                Beograd</div>
+            <div>
+                Kontakt telefon: <br><br> +381/61-5040-256
+            </div>
+            <div> Email: <br><br> sleepingbeauty@gmail.com</div>
+            <div class="trademark-sekcija">
+                <span id="date"></span><span> Sleeping Beauty TM </span>
+
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var d = new Date();
+                    $("#date")[0].innerHTML = d.toLocaleDateString() + " &nbsp";
+                })</script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedikir i manikir</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon/favicon1.jpg" type="image/x-icon" />
+    <!-- <script type="text/javascript" src="jquery-3.4.1.min.js"></script> -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <!-- Sleeping Beauty -> slika tj logo -->
+            <div class="logo"><a href="index.html"><img src="css/img/logo.jpg" alt="logo"></a></div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="index1.html">Usluge</a></li>
+                <li><a href="index2.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="maniPedi-baner">
+            <h1>Pedikir i manikir</h1>
+        </div>
+
+
+
+        <div class="maniPedi-content">
+            <div class="maniPedi-tekst">
+                <h3>Manikir</h3><br>
+
+                <p>Ruke su viševekovna inspiracija, kontrastni simbol nežnosti i snage i kao
+                    takve zaslužuju posebnu pažnju pri nezi i ulepšavanju. </p>
+                <br>
+                <p>Bilo da želite da vaši nokti izgledaju svedeno i jednostavno, ili pak želite
+                    upadljive i jake boje na Vašim noktima. Vaša očekivanja u potpunosti mogu
+                    biti zadovoljena u našem salonu "Sleeping Beauty". </p>
+                <br>
+                <img class="slika1" src="css/img/nokti.jpg" alt="nokti">
+                <br>
+                <p>Manikir ne podrazumeva samo nanošenje boje i ukrasnih elemenata na nokatnu
+                    ploču, već i dubinsku negu noktiju i kože oko ove osetljive regije. </p>
+                <br>
+                <p>U cilju lepšeg izgleda ruku nudimo Vam: Obrada noktiju i zanoktica,
+                    Ojačavanje prirodnih noktiju gel tehnikom, Izlivanje noktiju i nadogradnja
+                    noktiju, Korekcija noktiju. </p>
+                <br>
+                <h3>Pedikir</h3>
+                
+                <br>
+                <p>Nošenje neudobne obuće i nedostatak pažnje kada je o nezi stopala
+                    reč mogu dovesti do zadebljanja ili pucanja kože u ovoj regiji.
+                    Pedikir je prvi izbor osobama koje vode računa o sebi – iz medicinskih, ali
+                    i estetskih razloga.</p>
+                <br>
+                <img class="slika2" src="css/img/nokti2.jpg" alt="nokti"> <br>
+                <p>Ispravno sečenje i oblikovanje noktiju, kao i otklanjanje izumrlog tkiva
+                    i zadebljanja kože je vrlo bitno u nezi stopala. Ispravnom negom i
+                    pravim izborom pedikira umanjujete mogućnost pojave infekcija i ostalih
+                    zdravstvenih problema. </p><br>
+                <p>Nudimo više vrsta pedikira: klasičan pedikir, medicinski pedikir, protetika
+                    nokta. </p><br>
+
+                </p>
+            </div>
+            
+            <hr>
+            <div class="galerija">
+                <h3>Galerija naših prethodnih radova</h3>
+            </div>
+            <div class="container">
+                <div class="mySlides">
+                    <img src="css/img/nokti2.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="css/img/nokti.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="css/img/salon6.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="css/img/nokti3.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="css/img/nokti1.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="index1.html">Usluge</a>
+                        <ul>
+                            <li><a href="index3.html">  Šminkanje</a></li>
+                            <li><a class="active" href="index4.html">  Pedikir i manikir</a></li>
+                            <li><a href="index5.html">  Tretmani lica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index2.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div><p>Adresa: <br><br>
+                Vojvode Stepe 333
+                Beograd</p></div>
+            <div>
+                <p>Kontakt telefon: <br><br> +381/61-5040-256</p>
+            </div>
+            <div><p>Email: <br><br> sleepingbeauty@gmail.com</p></div>
+            <div class="trademark-sekcija">
+                <span id="date"></span><span> Sleeping Beauty TM </span>
+
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var d = new Date();
+                    $("#date")[0].innerHTML = d.toLocaleDateString() + " &nbsp";
+                })</script>
+        </div>
+    </div>
+</body>
+
+</html>

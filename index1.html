@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usluga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon/favicon1.jpg" type="image/x-icon" />
+    <script src="js/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <!-- Sleeping Beauty -> slika tj logo -->
+            <div class="logo"><a href="index.html"><img src="css/img/logo.jpg" alt="logo"></a></div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="index1.html">Usluge</a></li>
+                <li><a href="index2.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="usluga-baner">
+            <h1>Usluge</h1>
+        </div>
+
+        <div class="usluga-content">
+            <a href="index3.html">
+                <div class="card">
+                    <img src="css/img/cetkice1.jpg" alt="">
+                    <h3>Šminkanje</h3>
+
+                </div>
+            </a>
+            <a href="index4.html">
+                <div class="card">
+                    <img src="css/img/nokti77.jpg" alt="">
+                    <h3>Pedikir i manikir</h3>
+                </div>
+            </a>
+            <a href="index5.html">
+                <div class="card">
+                    <img src="css/img/tretman1.jpg" alt="">
+                    <h3>Tretmani lica</h3>
+                </div>
+            </a>
+        </div>
+        <div class="footer">
+            <div>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a class="active" href="index1.html">Usluge</a>
+                        <ul>
+                            <li><a href="index3.html">  Šminkanje</a></li>
+                            <li><a href="index4.html">  Pedikir i manikir</a></li>
+                            <li><a href="index5.html">  Tretmani lica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index2.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>Adresa: <br> <br>
+                Vojvode Stepe 333
+                Beograd</div>
+            <div>
+                Kontakt telefon: <br><br> +381/61-5040-256
+            </div>
+            <div> Email: <br><br> sleepingbeauty@gmail.com</div>
+            <div class="trademark-sekcija">
+                <span id="date"></span><span> Sleeping Beauty TM </span>
+
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var d = new Date();
+                    $("#date")[0].innerHTML = d.toLocaleDateString() + " &nbsp";
+                })</script>
+        </div>
+    </div>
+</body>
+
+</html>

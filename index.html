@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sleeping Beauty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon/favicon1.jpg" type="image/x-icon" />
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <!-- Sleeping Beauty -> slika tj logo -->
+            <div class="logo"><a href="index.html"><img src="css/img/logo.jpg" alt="logo"></a></div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="index1.html" class="usluge">Usluge</a></li>
+                <li><a href="index2.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="pocetna-baner">
+                <h1>Salon podređen Vama i Vašim željama!</h1>
+            </div>
+
+            <div id="flip">O NAMA</div>
+            <div id="panel">Salon lepote Sleeping Beauty je otvoren 2009. godine. To je mesto gde je sve podređeno Vama
+                i Vašim željama, kutak u kome Vas čeka kraljevski
+                tretman, a u kome ćete se opustiti kao u udobnosti svog doma. Pažljivo razmatrajući svaki detalj,
+                Sleeping Beauty svojim klijentima pruža udobnost
+                vodećih beauty centara evropskih prestonica – izuzetna lokacija i luksuzni enterijer, ekskluzivne usluge
+                i stručno, profesionalno i pažljivo osoblje.
+            </div>
+
+            <script src="js/jquery-3.4.1.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#flip").click(function () {
+                        $("#panel").slideToggle("slow");
+                    });
+                });
+            </script>
+
+            <!-- galerija -->
+            <div class="galerija">
+                <div class="row">
+                    <div class="column">
+                        <img src="css/img/salon2.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="css/img/salon3.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="css/img/salon4.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="css/img/salon5.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="css/img/salon1.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img id="expandedImg" style="width:50vw">
+                    <div id="imgtext"></div>
+                </div>
+
+            </div>
+            <br><br>
+
+            <div class="flip-box">
+                <div class="flip-box-unutra">
+                    <div class="flip-box-pred">
+                        <h2>Zašto mi?</h2>
+                    </div>
+                    <div class="flip-box-zad">
+                        <ul> <br><br>
+                            <li>&bull; Preko 10 godina iskustva i mnoštvo priznanja iz struke</li>
+                            <li>&bull; Najkvalitetniji profesionalni proizvodi poznatih svetskih brendova</li>
+                            <li>&bull; Raznovrsna ponuda i asortiman materijala</li>
+                            <li>&bull; Savramena oprema i vrhunska tehnika kozmetičkih usluga</li>
+                            <li>&bull; Prijatan ambijent salona i druželjubivo osoblje</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

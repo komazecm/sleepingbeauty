@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Šminkanje</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon/favicon1.jpg" type="image/x-icon" />
+    <script src="js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <!-- Sleeping Beauty -> slika tj logo -->
+            <div class="logo"><a href="index.html"><img src="css/img/logo.jpg" alt="logo"></a></div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="index1.html">Usluge</a></li>
+                <li><a href="index2.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="sminkanje-baner">
+            <h1>Šminkanje</h1>
+        </div>
+
+        <div class="sminkanje-content">
+            <div class="sminka-tekst">
+
+                <p><br>
+                    U salonu Sleeping Beauty Vas čeka iskusno i ljubazno osoblje koje će Vam posvetiti
+                    svoje vreme i energiju, kako bi nasmejani izašli iz našeg salona. Takođe, od izuzetne
+                    važnosti jeste kvalitet šminke koja se koristi. <br> Po tom pitanju, salon Sleeping Beauty
+                    se može pohvaliti kao jedan od malobrojnih salona u Beogradu koji koristi proizvode svetski
+                    poznatih i afirmovanih kozmetičkih brendova, kao što su: Dior, Mac, Lancome,
+                    Jeffree Star Cosmetics, Anastasia Beverly Hills, Too Faced, Chanel, Morphe i slično.
+                </p> <br>
+                <img src="css/img/sminka99.jpg" alt="sminka">
+                <p><br>
+                    U našem salonu nudimo širok dijapazon mogućnosti profesionalne šminke za sve
+                    moguće događaje za koje bi Vam ista bila potrebna. Počev od matura i glamuroznih večeri
+                    koje zahtevaju jaču šminku, pa do šminkanja za svadbu ili slične događaje gde je poželjno
+                    da šminka ne bude previše teška, a da ipak bude postojana ceo dan. <br>
+                    Takođe, sami odlučujete da li želite sa Vašom šminkom i veštačke trepavice.
+                    Naš salon Vam može ponuditi širok izbor veštačkih trepavica, raznih vrsta, dužina, ali
+                    sve vrhunskog kvaliteta.
+                </p> <br>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="index1.html">Usluge</a>
+                        <ul>
+                            <li><a class="active" href="index3.html">  Šminkanje</a></li>
+                            <li><a href="index4.html">  Pedikir i manikir</a></li>
+                            <li><a href="index5.html">  Tretmani lica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index2.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>Adresa: <br><br>
+                Vojvode Stepe 333
+                Beograd</div>
+            <div>
+                Kontakt telefon: <br><br> +381/61-5040-256
+            </div>
+            <div> Email: <br><br> sleepingbeauty@gmail.com</div>
+            <div class="trademark-sekcija">
+                <span id="date"></span><span> Sleeping Beauty TM </span>
+
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var d = new Date();
+                    $("#date")[0].innerHTML = d.toLocaleDateString() + " &nbsp";
+                })</script>
+        </div>
+    </div>
+</body>
+
+</html>
